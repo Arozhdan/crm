@@ -38,11 +38,11 @@
 				Заявки
 			</div>
 			<ul>
-				<li><a href="#" class="active">Все вместе</a></li>
-				<li><a href="#">Новые <div class="badge">12</div></a></li>
-				<li><a href="#">В работе</a></li>
-				<li><a href="#">Завершенные</a></li>
-				<li><a href="#">Архив</a></li>
+				<li><a href="02-crm-all-bids.html?fiter=new" data-btn-filter id="filter1">Новые <div class="badge">12</div></a></li>
+				<li><a href="02-crm-all-bids.html?fiter=process" data-btn-filter id="filter2">В работе</a></li>
+				<li><a href="02-crm-all-bids.html?fiter=archived" data-btn-filter id="filter3">Архив</a></li>
+				<li><a href="02-crm-all-bids.html?fiter=complete" data-btn-filter id="filter4">Завершенные</a></li>
+				<li><a href="02-crm-all-bids.html?fiter=all" data-btn-filter id="filter5">Все вместе</a></li>
 			</ul>
 		</div>
 		<!-- // Navigation 1 -->
@@ -77,13 +77,13 @@
 				<!-- <div class="form-row"> -->
 				<div class="row mb-3 justify-content-start">
 					<!-- Col -->
-					<div class="col">
+					<div class="col"> 
 						<div class="btn-group" role="group" aria-label="...">
-							<a href="#" class="btn btn-light">Все</a>
-							<a href="#" class="btn btn-light">Новые</a>
-							<a href="#" class="btn btn-light">В работе</a>
-							<a href="#" class="btn btn-light">Завершенные</a>
-							<a href="#" class="btn btn-light">Архив</a>
+							<a href="02-crm-all-bids.html?fiter=all" class="btn btn-light" data-btn-filter>Все</a>
+							<a href="02-crm-all-bids.html?fiter=new" class="btn btn-light" data-btn-filter>Новые</a>
+							<a href="02-crm-all-bids.html?fiter=process" class="btn btn-light" data-btn-filter>В работе</a>
+							<a href="02-crm-all-bids.html?fiter=complete" class="btn btn-light" data-btn-filter>Завершенные</a>
+							<a href="02-crm-all-bids.html?fiter=archived" class="btn btn-light" data-btn-filter>Архив</a>
 						</div>
 					</div>
 					<!-- // Col -->
@@ -115,44 +115,6 @@
 						<th></th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">1</th>
-						<td>01.08.2019</td>
-						<td>Курс по верстке</td>
-						<td>Юрий</td>
-						<td>info@rightblog.ru</td>
-						<td>+7 (909) 77-55-777 </td>
-						<td>
-							<div class="badge badge-pill badge-danger">Новый</div>
-						</td>
-						<td><a href="03-crm-edit-bid.html">Редактировать</a></td>
-					</tr>
-					<tr>
-						<th scope="row">2</th>
-						<td>01.08.2019</td>
-						<td>Курс по верстке</td>
-						<td>Юрий</td>
-						<td>info@rightblog.ru</td>
-						<td>+7 (909) 77-55-777 </td>
-						<td>
-							<div class="badge badge-pill badge-warning">В работе</div>
-						</td>
-						<td><a href="03-crm-edit-bid.html">Редактировать</a></td>
-					</tr>
-					<tr>
-						<th scope="row">1</th>
-						<td>01.08.2019</td>
-						<td>Курс по верстке</td>
-						<td>Юрий</td>
-						<td>info@rightblog.ru</td>
-						<td>+7 (909) 77-55-777 </td>
-						<td>
-							<div class="badge badge-pill badge-success">Завершенный</div>
-						</td>
-						<td><a href="03-crm-edit-bid.html">Редактировать</a></td>
-					</tr>
-				</tbody>
 			</table>
 
 		</div>
@@ -160,7 +122,14 @@
 	<!-- // main-wrapper -->
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/model.js"></script>
+	<script src="js/controller.main.js"></script>
+	<script src="js/view.main.js"></script>
+	<script>
+		Controller.start()
+	</script>
+
+
 </body>
 
 </html>

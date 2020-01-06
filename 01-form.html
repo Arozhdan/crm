@@ -27,30 +27,31 @@
 
 			<div class="white-plate__line-between white-plate__line-between--main"></div>
 
-			<form method="POST" action="<?=HOST?>payment-form.php">
+			<form method="POST" action="02-crm-all-bids.html?filter=all" data-create-order>
 				<label>Ваши данные:</label>
 				<div class="form-group">
-					<input type="text" name="name" autocomplete="on" class="form-control" placeholder="Имя и Фамилия" required>
+					<input type="text" name="name" autocomplete="on" class="form-control input-name" placeholder="Имя и Фамилия" required >
 				</div>
 				<div class="form-group">
-					<input type="text" name="phone" autocomplete="on" class="form-control" placeholder="Телефон">
+					<input type="text" name="phone" autocomplete="on" class="form-control input-phone" placeholder="Телефон">
 				</div>
 				<div class="form-group">
-					<input type="email" name="email" autocomplete="on" class="form-control" placeholder="Email" required>
+					<input type="email" name="email" autocomplete="on" class="form-control input-email" placeholder="Email" required>
 				</div>
 				<div class="form-group">
 					<label for="exampleFormControlSelect1">Продукт:</label>
-					<select name="product" class="form-control" id="exampleFormControlSelect1">
-						<option value="course-html">Курс по верстке</option>
-						<option value="course-js">Курс по JavaScript</option>
-						<option value="course-vue">Курс по VUE JS</option>
-						<option value="course-php">Курс по PHP</option>
-						<option value="course-wordpress">Курс по WordPress</option>
+					<select name="product" class="form-control input-product" id="exampleFormControlSelect1">
+						<option value="Курс по верстке">Курс по верстке</option>
+						<option value="Курс по JavaScript">Курс по JavaScript</option>
+						<option value="Курс по VUE">Курс по VUE JS</option>
+						<option value="Курс по PHP">Курс по PHP</option>
+						<option value="Курс по WordPress">Курс по WordPress</option>
 					</select>
+					
 				</div>
 
 				<div class="form-group">
-					<button type="submit" class="btn btn-lg btn-primary btn-block">Оформить заявку</button>
+					<button type="submit" class="btn btn-lg btn-primary btn-block" id="createOrder">Оформить заявку</button>
 				</div>
 			</form>
 
@@ -58,8 +59,11 @@
 	</div>
 	<!-- // white-plate -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/controller.form.js"></script>
+	<script src="js/model.js"></script>
+	<script>
+		Controller.start()
+	</script>
 </body>
 
 </html>

@@ -1,0 +1,6 @@
+"{"idCounter":4,
+"orders":[
+  {"id":1,"date":"2020-01-06T11:39:48.154Z","product":"Курс по верстке","name":"Юрий","email":"info1@rightblog.ru","phone":"+79097755777","status":"new"},
+  {"id":2,"date":"2020-01-06T11:39:48.154Z","product":"Курс по JavaScript","name":"Алексей","email":"info12@rightblog.ru","phone":"+79025755333","status":"process"},
+  {"id":3,"date":"2020-01-06T11:39:48.154Z","product":"Курс по PHP","name":"Дмитрий","email":"info123@rightblog.ru","phone":"+78887755111","status":"complete"}]}"
+  
