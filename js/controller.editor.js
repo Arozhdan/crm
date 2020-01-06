@@ -19,7 +19,7 @@
       const data = View.getFormData()
       Model.updateOrder(idOrder, data)
       history.back()
-
+    
     }
   }
   function getSearchObject() {

@@ -2,7 +2,7 @@
 (function () {
   'use strict'
   let data = {
-    idCounter: 4,
+    idCounter: 5,
     orders: [
 
       {
@@ -33,6 +33,15 @@
         email: 'info123@rightblog.ru',
         phone: '+78887755111',
         status: 'complete'
+      },
+      {
+        id: 4,
+        date: new Date,
+        product: 'Курс по PHP',
+        name: 'Arozhdan',
+        email: 'arozhdan@rightblog.ru',
+        phone: '+78824555111',
+        status: 'archived'
       }
     ]
   }

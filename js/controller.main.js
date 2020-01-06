@@ -20,7 +20,7 @@
     const orders = originalOrders.filter(order => {
       if (filter === 'all') {
         document.querySelector('#filter5').classList.add('active')
-        return order.status !== 'archved'
+        return order.status !== 'archived'
       }
       filter === 'new'?document.querySelector('#filter1').classList.add('active'):document.querySelector('#filter1').classList.remove('active')
       filter === 'complete'?document.querySelector('#filter4').classList.add('active'):document.querySelector('#filter4').classList.remove('active')
